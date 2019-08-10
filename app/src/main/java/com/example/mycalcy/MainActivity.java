@@ -25,7 +25,7 @@ import com.fathzer.soft.javaluator.DoubleEvaluator;
 
         e1= (EditText)findViewById(R.id.editText1);
         e2= (EditText)findViewById(R.id.editText2);
-        e1.setText("1");
+      //  e1.setText("1");
         e2.setText("0");
         //initial display
 
@@ -195,7 +195,7 @@ import com.fathzer.soft.javaluator.DoubleEvaluator;
                     text = e2.getText().toString();
                     expression = e1.getText().toString()+text;
                 }
-              //  e1.setText("");
+                  e1.setText("");
                 if(expression.length()==0){
                     expression="0.0";
                 }
@@ -212,7 +212,7 @@ import com.fathzer.soft.javaluator.DoubleEvaluator;
                 catch(Exception e)
             {
                 e2.setText("Invalid expresson ");
-                e1.setText("");
+                e1.setText("Unable to process..sorry");
                 expression="";
                 e.printStackTrace();
 
